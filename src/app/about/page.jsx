@@ -21,19 +21,19 @@ export default function AboutPage() {
         <div className="overlay h-full w-full absolute inset-0 bg-black bg-opacity-20" />
       </figure>
 
-      <section className="flex flex-col items-center justify-center gap-2 md:mt-24 mt-12 mb-8 max-w-[35%] mx-auto text-center">
+      <section className="flex flex-col items-center justify-center gap-2 md:mt-24 mt-12 mb-8 max-w-[70vw] xl:max-w-[35%] mx-auto text-center">
         <h5>{about.sec1.heading}</h5>
         <p className="text-paragraphMediumColor">{about.sec1.para}</p>
       </section>
 
-      <section className="flex flex-col items-center justify-center gap-2 mb-12 max-w-[35%] mx-auto text-center">
+      <section className="flex flex-col items-center justify-center gap-2 mb-12 max-w-[70vw] xl:max-w-[35%] mx-auto text-center">
         <h5>{about.sec2.heading}</h5>
         <p className="text-paragraphMediumColor">{about.sec2.para}</p>
       </section>
-      <section className="flex items-center justify-center gap-2 mb-12 max-w-[50%] mx-auto text-center">
+      <section className="flex max-md:flex-col items-center justify-center gap-2 mb-12 md:max-w-[50vw] max-w-[65vw] mx-auto text-center">
         {about.images.gridImages.map((image) => {
           return (
-            <figure className="relative overflow-hidden aspect-square">
+            <figure className="relative overflow-hidden aspect-square w-full">
               <CustomImage
                 src={image}
                 alt=""
