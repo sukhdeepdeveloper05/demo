@@ -11,7 +11,7 @@ export default function NavLink({ children, className, item, ...props }) {
   return (
     <Link
       className={`cursor-pointer border-b text-2xl lg:text-base ${
-        pathname === "/" || pathname === "/contact"
+        pathname === "/"
           ? isActive
             ? "lg:text-white lg:border-b-white text-primary border-b-primary"
             : "lg:text-link-secondary lg:hover:text-white text-link-primary hover:text-primary border-b-transparent"
