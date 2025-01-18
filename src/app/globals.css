@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --headerHeight: 116px;
+    --footerHeight: 272px;
+    @screen lg {
+      --headerHeight: 143px;
+      --footerHeight: 272px;
+    }
+  }
+
+  body {
+    @apply bg-site-background;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-body-primary text-primary;
+  }
+
+  h1 {
+    @apply sm:text-8xl text-6xl;
+  }
+
+  h2 {
+    @apply sm:text-7xl text-4xl;
+  }
+
+  h3 {
+    @apply sm:text-5xl text-2xl text-headingLargeColor;
+  }
+
+  h4 {
+    @apply sm:text-2xl text-xl text-headingLargeColor;
+  }
+
+  h5 {
+    @apply sm:text-xl text-lg;
+  }
+
+  h6 {
+    @apply text-base;
+  }
+
+  p,
+  span {
+    @apply font-body-primary text-primary text-[14.4px];
+  }
+
+  a {
+    @apply font-body-primary;
+  }
+
+  button {
+    @apply font-body-primary;
+  }
+
+  section {
+    @apply bg-site-background;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply bg-white max-w-[90vw] mx-auto rounded-3xl p-12 max-md:p-8;
+  }
+
+  .home-sec1 {
+    grid-template-columns:
+      minmax(calc(4vw - 11px), 1fr)
+      repeat(8, minmax(0, calc((1400px - (11px * (8 - 1))) / 8)))
+      minmax(calc(4vw - 11px), 1fr);
+    grid-template-rows: repeat(22, minmax(24px, 0));
+
+    @screen md {
+      grid-template-columns:
+        minmax(calc(4vw - 11px), 1fr) repeat(
+          24,
+          minmax(0, calc((1400px - (11px * (24 - 1))) / 24))
+        )
+        minmax(calc(4vw - 11px), 1fr);
+
+      grid-template-rows: repeat(
+        22,
+        minmax(calc(min(1400px, calc(100vw - 4vw * 2 - 0vw)) * 0.0215), auto)
+      );
+    }
+  }
+
+  .home-sec1__img1 {
+    grid-area: 6/2/12/6;
+
+    @screen md {
+      grid-area: 8/2/23/9;
+    }
+  }
+  .home-sec1__img2 {
+    grid-area: 8/6/14/10;
+
+    @screen md {
+      grid-area: 1/18/19/26;
+    }
+  }
+  .home-sec1__heading-img {
+    grid-area: 3/2/6/10;
+
+    @apply mt-1;
+
+    @screen md {
+      grid-area: 5/6/11/20;
+    }
+  }
+  .home-sec1__heading {
+    grid-area: 3/3/5/9;
+
+    @apply mt-1;
+
+    @screen md {
+      grid-area: 6/8/12/19;
+    }
+  }
+  .home-sec1__desc {
+    grid-area: 14/2/21/10;
+
+    @screen md {
+      grid-area: 10/9/17/18;
+    }
+  }
+
+  .home-video-sec {
+    clip-path: polygon(
+      98.5vw 0%,
+      100vw 0.5%,
+      100vw 90%,
+      93vw 87%,
+      20vw 100%,
+      0vw 90%,
+      0vw 0%,
+      74vw 12vw
+    );
+  }
+
+  .masonry-wrapper {
+    gap: 3vw !important;
+  }
+  .masonry-wrapper > div {
+    gap: 3vw !important;
+  }
+}
