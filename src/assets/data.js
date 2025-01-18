@@ -5,6 +5,10 @@ import homeSec1Heading from "@/assets/Images/homeSec1Heading.webp";
 import homeSec1Img1 from "@/assets/Images/homeSec1Img1.webp";
 import homeSec1Img2 from "@/assets/Images/homeSec1Img1.webp";
 import contactPageImage from "@/assets/Images/contact.webp";
+import aboutPageImage from "@/assets/Images/about/about.webp";
+import aboutPageGridImage1 from "@/assets/Images/about/1.webp";
+import aboutPageGridImage2 from "@/assets/Images/about/2.webp";
+import aboutPageGridImage3 from "@/assets/Images/about/3.webp";
 
 import { galleryExports } from "./Images/gallery/exports";
 
@@ -85,6 +89,49 @@ export default {
       ],
     },
   },
+  about: {
+    images: {
+      main: aboutPageImage,
+      gridImages: [
+        aboutPageGridImage1,
+        aboutPageGridImage2,
+        aboutPageGridImage3,
+      ],
+    },
+    sec1: {
+      heading:
+        "We are a team of authentic filmmakers and photographers here to capture your special moments in the utmost raw and authentic way",
+      para: "Capturing the essence of the moment itself and projecting it through the timeless medium of visuals and sound for you to reminisce some of life’s most monumental moments.",
+    },
+    sec2: {
+      heading:
+        "We draw on contemporary influences while staying true to capturing the traditional spirit of Indian weddings.",
+      para: "By getting to know you, and fulfilling your vision, we strive to create photography which evokes nostalgic sentiments, candid moments and a unique mood to your story. ",
+    },
+  },
+  faqs: [
+    {
+      question: "What is your approach towards making a wedding film?",
+      answer:
+        "We would like to present our wedding films as if a family member has shot the wedding with a handy cam. Our films are deeply personal.",
+    },
+    {
+      question:
+        "Do you do both Photography and Films? Do you offer photography and film separately ?",
+      answer:
+        "Yes we offer both photography and films as part of our service portfolio. It works best when we are doing both photography and film as there is",
+    },
+    {
+      question: "What are your delivery timelines?",
+      answer:
+        "We deliver a small set of preview images within 48 hrs. The full set is delivered between 2-3 months. Creating a wedding film is a highly creative process and we take around 6 months to prepare the film. Every film goes through multiple iterations to ensure the film truly justifies the soul of the wedding.",
+    },
+    {
+      question: "What is the length of the wedding film?",
+      answer:
+        "Length of the wedding film depends on . We try to keep the duration of our films between 20-30 minutes so the are crisp and rewatchable.",
+    },
+  ],
   contact: {
     image: contactPageImage,
     paras: [
@@ -134,29 +181,6 @@ export default {
     email: "hello@example.com",
     location: "Mumbai . Banglore",
   },
-  faqs: [
-    {
-      question: "What is your approach towards making a wedding film?",
-      answer:
-        "We would like to present our wedding films as if a family member has shot the wedding with a handy cam. Our films are deeply personal.",
-    },
-    {
-      question:
-        "Do you do both Photography and Films? Do you offer photography and film separately ?",
-      answer:
-        "Yes we offer both photography and films as part of our service portfolio. It works best when we are doing both photography and film as there is",
-    },
-    {
-      question: "What are your delivery timelines?",
-      answer:
-        "We deliver a small set of preview images within 48 hrs. The full set is delivered between 2-3 months. Creating a wedding film is a highly creative process and we take around 6 months to prepare the film. Every film goes through multiple iterations to ensure the film truly justifies the soul of the wedding.",
-    },
-    {
-      question: "What is the length of the wedding film?",
-      answer:
-        "Length of the wedding film depends on . We try to keep the duration of our films between 20-30 minutes so the are crisp and rewatchable.",
-    },
-  ],
   gallery: [...galleryExports],
   weddings: [
     {
