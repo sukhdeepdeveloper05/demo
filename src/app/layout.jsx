@@ -19,22 +19,6 @@ const adobeGaramondPro = localFont({
   preload: true,
   variable: "--body-primary-font-family",
 });
-const queens = localFont({
-  src: [
-    {
-      path: "../assets/Fonts/Queens/QueensCondensedTrial-Light.woff",
-      weight: "300",
-      style: "italic",
-    },
-    {
-      path: "../assets/Fonts/Queens/QueensCondensedTrial-Thin.woff",
-      weight: "100",
-      style: "italic",
-    },
-  ],
-  preload: true,
-  variable: "--queens",
-});
 
 export const metadata = {
   title: "House On The Clouds",
@@ -46,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${adobeGaramondPro.variable} ${queens.variable} antialiased scroll-smooth`}
+        className={`${adobeGaramondPro.variable} antialiased scroll-smooth`}
       >
         <Header />
         {children}
