@@ -42,7 +42,9 @@ export default function CinematographyInvestmentPage() {
             </div>
           );
         })}
-        <PrimaryBtn href={"/contact"} className={"uppercase font-bold mt-8"}>Create custom Plan</PrimaryBtn>
+        <div>
+          <PrimaryBtn href={"/contact"} className={"uppercase font-bold mt-8"}>Create custom Plan</PrimaryBtn>
+        </div>
       </section>
     </main>
   );
